@@ -30,7 +30,7 @@
             <?php if (has_post_thumbnail()) : ?>
             <?php the_post_thumbnail(); ?>
             <?php else: ?>
-              <img src="<?php echo get_template_directory_uri();?>/no-image.png" width="100%">
+              <img src="<?php echo get_template_directory_uri();?>/no-image.jpg" width="100%">
             <?php endif; ?>
           </div>
           <?php the_content(); ?>
