@@ -1,21 +1,4 @@
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-12">
-        <h2>About me</h2>
-        <p>aiueo</p>
-      </div>
-      <div class="col-lg-4 col-md-12">
-        <h2>カテゴリー</h2>
-        <p>aiueo</p>
-      </div>
-      <div class="col-lg-4 col-md-12">
-        <h2>Twitter</h2>
-        <a class="twitter-timeline" data-width="520" data-height="600" href="https://twitter.com/nabla_radio?ref_src=twsrc%5Etfw">Tweets by nabla_radio</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-    </div>
-  </div>
-
   <div class="copy d-flex align-items-center  text-white bg-dark">
     <span>Copyright - <a class="text-white" href="<?php echo home_url('/'); ?>"><?php bloginfo('name');?></a>,2019<?php if(date("Y")!=2019) echo date("-Y"); ?> ,All Rights Reserved.</span>
   </div>
