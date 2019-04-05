@@ -18,8 +18,8 @@
                 </div>
                 <div class="card-body">
                   <h2><?php the_title(); ?></h2>
-                  <p class="card-text">
-                    <?php echo get_the_date(); ?>
+                  <?php echo get_the_date(); ?>
+                  <p class="card-text">                    
                     <?php the_excerpt(); ?>
                   </p>
                 </div>
