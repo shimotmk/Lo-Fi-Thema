@@ -1,0 +1,196 @@
+/*
+Theme Name: Lo-Fi Thema
+Author: Tomoki Shimomura
+Author URI: http://www.shimotmk.com
+Description: My first responsive themeです。 見やすさ、分かりやすさ、SEO内部対策を自分なりに意識して作りました。
+Version: 1.0
+*/
+
+body{
+  font-family: Arial,Verdana;
+}
+
+p{
+  padding-bottom:10px;
+}
+h1 a,h2 a,h3 a,li a{
+  color: black;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+main{
+  display: flex;
+}
+h2{
+  font-size:18px;
+}
+
+.thumbnail-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*header*/
+header{
+
+}
+  header a:hover{
+    color: black;
+  }
+
+/*nav*/
+nav{
+  list-style: none;
+  display: flex;
+}
+
+nav li{
+  width: 200px;
+  text-align: center;
+  background-color: skyblue;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 2px;
+ }
+ .nav-item{
+
+ }
+
+/*article*/
+article{
+  display: inline-block;
+  float: left;
+}
+
+  /*section*/
+  section{
+    display: inline-block;
+    margin: auto;
+  }
+
+  .post-image img{
+    width: 100%;
+    height: auto;
+  }
+
+  section a{
+    color: black;
+  }
+  section a:hover{
+    color: black;
+  }
+
+
+    /*section内のcard indexのカードイメージ*/
+    section .card img{
+      height:300px;
+    }
+    section .card-body{
+      height: 150px;
+    }
+    section .card h2{
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section .card-text {
+      text-decoration: none;
+      color: black;
+      overflow: hidden;
+      height: 72px;
+    }
+
+    .relatedkiji .card img{
+      height:100px;
+    }
+    .relatedkiji .card-body{
+      height: 100px;
+    }
+    .relatedkiji .card-text {
+      text-decoration: none;
+      color: black;
+      overflow: hidden;
+      height: 50px;
+    }
+
+
+
+  /*nabigation*/
+  .nabigation{
+    overflow: hidden;
+    padding:10px 0;
+    font-size: 12px;
+    margin-bottom:15px;
+  }
+    .prev{
+      float:left;
+      width:200px;
+    }
+    .next{
+      float: right;
+      width: 200px;
+      text-align: right;
+    }
+
+  /*SNSシェアボタン*/
+  .snsShareArea .row{
+    height: 50px;
+    margin-top: auto;
+  }
+  .snsShareArea a{
+    color: white;
+    font-weight: bold;
+  }
+    .bg-twitter{
+      background-color: #3D97F1;
+      border-radius: 5px;
+      align-items: center;
+      display: flex;
+    }
+    .bg-facebook {
+      background-color: #2B418B;
+      border-radius: 5px;
+      border-radius: 5px;
+      align-items: center;
+      display: flex;
+    }
+    .good{
+      text-align: center;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+    }
+    .center_iframe{
+      display: block;
+      margin: auto;
+      align-items: center;
+      vertical-align: bottom;
+    }
+
+
+
+
+
+/*aside*/
+aside{
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  margin-left: auto;
+}
+
+/*footer*/
+footer{
+  width: 100%;
+  margin-top: auto;
+}
+
+  footer .copy{
+    height: 50px;
+  }
+  footer span{
+    margin: 0 auto;
+  }
