@@ -90,7 +90,7 @@
                     <?php endif; ?>
                   </div>
                   <div class="card-body">
-                    <h2><?php the_title(); ?></h2>
+                    <h5><?php the_title(); ?></h5>
                     <p class="card-text">
                       <?php echo get_the_date(); ?>
                       <?php the_excerpt(); ?>
