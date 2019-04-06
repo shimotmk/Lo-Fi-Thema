@@ -33,7 +33,7 @@ main{
 
 /*header*/
 header{
-
+  padding-top: 10px;
 }
   header a:hover{
     color: black;
