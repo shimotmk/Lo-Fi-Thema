@@ -2,7 +2,7 @@
 Theme Name: Lo-Fi Thema
 Author: Tomoki Shimomura
 Author URI: http://www.shimotmk.com
-Description: My first responsive themeです。 見やすさ、分かりやすさ、SEO内部対策を自分なりに意識して作りました。
+Description: 初めて作ったレスポンシブテーマです。 見やすさ、分かりやすさ、SEO内部対策を自分なりに意識して作りました。
 Version: 1.0
 */
 
@@ -78,7 +78,7 @@ article{
     display: inline-block;
     margin: auto;
   }
-  
+
   .title h2{
     font-weight: bold;
     font-size: 2em;
