@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <main class="container">
+  <main class="container pt-3">
     <article>
 
       <section>
@@ -17,9 +17,9 @@
                   <?php endif; ?>
                 </div>
                 <div class="card-body">
-                  <h2><?php the_title(); ?></h2>
+                  <h2 class="h2"><?php the_title(); ?></h2>
                   <?php echo get_the_date(); ?>
-                  <p class="card-text">                    
+                  <p class="card-text">
                     <?php the_excerpt(); ?>
                   </p>
                 </div>
@@ -35,8 +35,8 @@
 
       <!--次・前のページ 一覧ページ用-->
       <div class="navigation container">
-        <div class="prev"><?php previous_posts_link('前のページ'); ?></div>
-        <div class="next"><?php next_posts_link('次のページ'); ?></div>
+        <div class="prev"><?php previous_posts_link('<i class="fas fa-angle-double-left"></i>前のページ'); ?></div>
+        <div class="next"><?php next_posts_link('次のページ<i class="fas fa-angle-double-right"></i>'); ?></div>
       </div>
 
     </article>

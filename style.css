@@ -24,9 +24,7 @@ img{
 main{
   display: flex;
 }
-h2{
-  font-size:18px;
-}
+
 
 .thumbnail-image img {
   width: 100%;
@@ -47,22 +45,32 @@ nav{
   display: flex;
 }
 
-nav li{
-  width: 200px;
-  text-align: center;
-  background-color: skyblue;
-  height: 50px;
-  line-height: 50px;
-  margin-right: 2px;
- }
- .nav-item{
+  nav ul{
+    display: flex;
+    table-layout: fixed;
+    text-align: center;
+    flex-wrap: wrap;
+    width:100%;
+  }
+  nav li{
+    width: 200px;
+    display:table-cell;
+    background-color: #f8f9ff;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+   }
+   .nav-item{
 
- }
+   }
 
 /*article*/
 article{
   display: inline-block;
   float: left;
+}
+.breadcrumb{
+ background-color: #f8f9ff;
 }
 
   /*section*/
@@ -70,10 +78,18 @@ article{
     display: inline-block;
     margin: auto;
   }
+  
+  .title h2{
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.4em;
+  }
 
   .post-image img{
     width: 100%;
     height: auto;
+    padding-bottom: 30px;
   }
 
   section a{

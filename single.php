@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <!--個別ページの設定-->
-<main class="container">
+<main class="container pt-3">
   <article class="col-md-8 col-xs-12">
 
     <!--パンくず表示-->
@@ -25,7 +25,9 @@
     <section>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="col-xs-12">
-          <h2><?php the_title(); ?></h2>
+          <div class="title">
+            <h2><?php the_title(); ?></h2>
+          </div>
           <div class="post-image">
             <?php if (has_post_thumbnail()) : ?>
             <?php the_post_thumbnail(); ?>
@@ -46,10 +48,10 @@
       <!--次・前のページ 個別ページ用-->
       <div class="navigation container" style="margin-top:100px;;">
       <?php if (get_previous_post()):?>
-      <div class="prev"><?php previous_post_link('%link', '前のページ'); ?></div>
+      <div class="prev"><?php previous_post_link('%link','<i class="fas fa-angle-double-left"></i>前のページ'); ?></div>
       <?php endif; ?>
       <?php if (get_next_post()):?>
-      <div class="next"><?php next_post_link('%link', '次のページ'); ?></div>
+      <div class="next"><?php next_post_link('%link', '次のページ<i class="fas fa-angle-double-right"></i>'); ?></div>
       <?php endif; ?>
     </div>
 
@@ -66,7 +68,7 @@
           foreach($cats as $cat){
             $catkwds[] = $cat->term_id;
           }
-        } ?>
+        }?>
         <?php $args = array(
           'post_type' => 'post',
           'posts_per_page' => '8',
@@ -76,8 +78,7 @@
         );
         $my_query = new WP_Query( $args );?>
         <div class="row">
-          <?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
-
+          <?php if ( $my_query->have_posts() ) : while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
             <div class="col-md-3 col-6 p-1">
               <a href="<?php the_permalink();?>">
@@ -100,8 +101,9 @@
               </a>
             </div>
 
-
-          <?php endwhile; ?>
+          <?php endwhile; else : ?>
+            <p>関連記事がありません。</p>
+          <?php endif; ?>
         </div>
         <?php wp_reset_postdata(); ?>
       </ul>
