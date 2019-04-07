@@ -22,20 +22,23 @@
     </div>
 
     <!--本文-->
-    <section>
+    <section class="container-fluid">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="col-xs-12">
           <div class="title">
             <h2><?php the_title(); ?></h2>
+            <?php echo get_the_date(); ?>
           </div>
           <div class="post-image">
             <?php if (has_post_thumbnail()) : ?>
-            <?php the_post_thumbnail(); ?>
+            <?php the_post_thumbnail(''); ?>
             <?php else: ?>
               <img src="<?php echo get_template_directory_uri();?>/no-image.jpg" width="100%">
             <?php endif; ?>
           </div>
-          <?php the_content(); ?>
+          <div class="content">
+            <?php the_content(); ?>
+          </div>
         </div>
 
         <!--snsシャアボタン-->
@@ -94,7 +97,6 @@
                     <h5><?php the_title(); ?></h5>
                     <p class="card-text">
                       <?php echo get_the_date(); ?>
-                      <?php the_excerpt(); ?>
                     </p>
                   </div>
                 </div>

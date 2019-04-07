@@ -2,19 +2,27 @@
 Theme Name: Lo-Fi Thema
 Author: Tomoki Shimomura
 Author URI: http://www.shimotmk.com
-Description: 初めて作ったレスポンシブテーマです。 見やすさ、分かりやすさ、SEO内部対策を自分なりに意識して作りました。
+Description: My first responsive themeです。 見やすさ、分かりやすさ、SEO内部対策を自分なりに意識して作りました。
 Version: 1.0
 */
 
 body{
   font-family: Arial,Verdana;
 }
-
+a:hover{
+  color: black;
+}
 p{
-  padding-bottom:10px;
+  padding-bottom:8px;
 }
 h1 a,h2 a,h3 a,li a{
   color: black;
+}
+h2{
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.4em;
 }
 img{
   max-width: 100%;
@@ -25,15 +33,9 @@ main{
   display: flex;
 }
 
-
-.thumbnail-image img {
-  width: 100%;
-  object-fit: cover;
-}
-
 /*header*/
 header{
-  padding-top: 10px;
+
 }
   header a:hover{
     color: black;
@@ -68,30 +70,45 @@ nav{
 article{
   display: inline-block;
   float: left;
+  width: 80%;
 }
+@media screen and (max-width:991px) {
+  article{
+    width: 100%;
+  }
+}
+
 .breadcrumb{
- background-color: #f8f9ff;
+  color: black;
+}
+.breadcrumb a{
+  color: black;
 }
 
   /*section*/
   section{
     display: inline-block;
     margin: auto;
+    width: 20%;
   }
 
-  .title h2{
-    font-weight: bold;
-    font-size: 2em;
-    text-align: center;
-    line-height: 1.4em;
+  .thumbnail-image img {
+    width: 100%;
+    object-fit: cover;
   }
-
   .post-image img{
     width: 100%;
     height: auto;
+    padding-top:30px;
     padding-bottom: 30px;
+    object-fit: cover;
   }
-
+  .title h2{
+    word-wrap: break-word;
+  }
+  .content{
+    word-wrap: break-word;
+  }
   section a{
     color: black;
   }
@@ -105,7 +122,7 @@ article{
       height:300px;
     }
     section .card-body{
-      height: 150px;
+      height: 200px;
     }
     section .card h2{
       color: black;
@@ -186,6 +203,15 @@ article{
       vertical-align: bottom;
     }
 
+  /*関連記事*/
+  h5{
+    overflow:hidden;
+    height: 3.6em;
+    font-size: .85em;
+    line-height: 1.8;
+    font-weight:bold;
+    color: black;
+  }
 
 
 

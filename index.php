@@ -2,7 +2,7 @@
   <main class="container pt-3">
     <article>
 
-      <section>
+      <section class="container-fluid">
         <div class="row">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -17,11 +17,9 @@
                   <?php endif; ?>
                 </div>
                 <div class="card-body">
-                  <h2 class="h2"><?php the_title(); ?></h2>
-                  <?php echo get_the_date(); ?>
-                  <p class="card-text">
-                    <?php the_excerpt(); ?>
-                  </p>
+                  <h2 style="overflow:hidden; height: 3.6em; font-size: 25px; line-height: 1.8;"><?php the_title(); ?></h2>
+                  <div class="m-0"><?php echo get_the_date(); ?></div>
+                  <div class="m-0" style="overflow:hidden; height: 3.6em; font-size: 16px; line-height: 1.8;"><?php the_excerpt(); ?></div>
                 </div>
               </div>
             </a>
